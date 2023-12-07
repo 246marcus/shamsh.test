@@ -1,0 +1,237 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: century;
+}
+
+header {
+    position: relative;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/img/b.jpg);
+    height: 100vh;
+    background-color: cover;
+    background-position: center ;
+    min-height: 100vh;
+}
+
+ul {
+    float: right;
+    list-style-type: none;
+    margin-top: 10px;
+    min-height: 400px;
+    margin-right: 40px;
+    font-size: 16px;
+}
+
+ul li{
+    display: inline-block;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px soild transparent;
+    transition: 0.5 ease;
+}
+
+a:visited {
+    color: white;
+ }
+
+
+ul li a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+ul li.active a{
+    background-color: #fff;
+    color: #000;
+}
+
+.logo img{
+    float: left;
+    width: 150px;
+    height: auto;
+}
+
+.main{
+   /*min-width: 1200px;*/
+    margin: auto;
+}
+
+.title {
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title h1{
+    color: #fff;
+    font-size: 70px;
+    white-space: nowrap;
+}
+
+.button{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn{
+    width: fit-content;
+    border: 1px soild #fff;
+    color: #fff;
+    transition: 0.5 ease;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
+}
+
+.sub-menu{
+    display: none;
+    top: 6%;
+    position: relative;
+}
+
+.sub-menu ul{
+    position: absolute;
+}
+
+.main ul li:hover .sub-menu{
+    display: block;
+    position: absolute;
+    background-color: rgb(0, 45, 117);
+    margin-top: 12px;
+    margin-left: -8px;
+}
+
+.main ul li:hover .sub-menu ul{
+    display: block;
+    margin: 6px;
+}
+
+.main ul li:hover .sub-menu ul li{
+    width: 75px;
+    padding: 5px;
+    border-bottom: 1px #fff;
+    background: transparent;
+    transition: 0.4 ease;
+    text-align: left;
+    border-radius: 0px;
+}
+
+/*ABOUT HOME RECEIPES RESET*/
+.about{
+    text-align: center;
+    padding: 2px;
+    background-color: #000;
+    color: #fff;
+}
+
+.ceo {
+    float: right;
+    width: 20%;
+    height: auto;
+    border-radius: 20%;
+}
+
+@media screen and (max-width: 768px)
+{
+    ul {
+        margin-right: 0;
+    }
+    ul li {
+        display: block;
+        padding: 10px 0;
+        position: relative;
+    }
+
+    ul li a {
+        text-decoration: none;
+        color: #fff;
+        padding: 5px 20px;
+        border: 1px soild transparent;
+        transition: 0.5 ease;
+    }
+
+    .title {
+        width: 90%;
+    }
+
+    .title h1 {
+        font-size: 2.5rem;
+    }
+
+    .button {
+        gap: 20px;
+        justify-content: start;
+        flex-direction: column;
+    }
+
+    .main ul li:hover .sub-menu {
+        display: block;
+        position: absolute;
+        background-color: rgb(0, 45, 117);
+        margin-top: 40px;
+        margin-left: 10px;
+    }
+}
+/* PAYMENT DETAILS*/
+.payment_body{
+    background-color: ;
+}
+
+.h2_payment{ 
+    text-align: center;
+    background-color:gold ;
+
+}
+
+ .contact__h2 {
+     margin: 0;
+ }
+
+ .contact__fieldset {
+     border: none;
+ }
+
+ .contact__p {
+     margin: 1em 0;
+ }
+
+ .contact__label{
+     display: block;
+     font-weight: bold;
+ }
+
+ .contact__input,
+ .contact__textarea{
+     padding: 0.5em;
+     border-radius: 15px;
+     border-width: 2px;
+     width: 100%;
+ }
+
+ .contact__button{
+    font-size: 20px;
+    text-decoration: solid;
+     padding: 0.5em;
+     border-radius: 5px;
+     background-color: white;
+     position: center ;
+ }
+
+ .manager{
+    background-color: gold;
+    text-align: center;
+ }
